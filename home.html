@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- ----------------------------------------------------------------------- -->
+	<!-- ----------------------------------------------------------------------- -->
+	<!-- ----------------------------------------------------------------------- -->
+	<!-- ----------------------------------------------------------------------- -->
+	<!-- page  Title-->
+	<title>Plant diseases Home</title>
+	<!-- ----------------------------------------------------------------------- -->
+	<!-- ----------------------------------------------------------------------- -->
+	<!-- ----------------------------------------------------------------------- -->
+	<!-- ----------------------------------------------------------------------- -->
+	<!-- page  icon-->
+	<link rel="icon" href="static\image\tap\leaf.png">
+	<!-- ------------------------------------------------------------------------------------------------------------ -->
+	<!-- ------------------------------------------------------------------------------------------------------------ -->
+	<!-- ------------------------------------------------------------------------------------------------------------ -->
+	<!-- ------------------------------------------------------------------------------------------------------------ -->
+	<!-- link fonts  -->
+	<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,700;0,900;1,300;1,400&display=swap" rel="stylesheet">
+	<!-- ------------------------------------------------------------------------------------------------------------ -->
+	<!-- ------------------------------------------------------------------------------------------------------------ -->
+	<!-- ------------------------------------------------------------------------------------------------------------ -->
+	<!-- ------------------------------------------------------------------------------------------------------------ -->
+	<!-- link icon css  Title-->
+	<link rel="stylesheet" href="static\css\boxicons.min.css">
+	<!-- ------------------------------------------------------------------------------------------------------------ -->
+	<!-- ------------------------------------------------------------------------------------------------------------ -->
+	<!-- ------------------------------------------------------------------------------------------------------------ -->
+	<!-- ------------------------------------------------------------------------------------------------------------ -->
+	<!-- link bootstrap  css-->
+	<link rel="stylesheet" href="static\css\bootstrap.min.css">
+	<!-- ------------------------------------------------------------------------------------------------------------ -->
+	<!-- ------------------------------------------------------------------------------------------------------------ -->
+	<!-- ------------------------------------------------------------------------------------------------------------ -->
+	<!-- ------------------------------------------------------------------------------------------------------------ -->
+	<!-- link main file css-->
+	<link rel="stylesheet" href="static\css\mainstyle.css">
+	<!-- ------------------------------------------------------------------------------------------------------------ -->
+	<!-- ------------------------------------------------------------------------------------------------------------ -->
+	<!-- ------------------------------------------------------------------------------------------------------------ -->
+	<!-- ------------------------------------------------------------------------------------------------------------ -->
+
+
+</head>
+<body class="home-page">
+
+
+	<!-- ---------------------------------------------------------------------------------------------------->
+	<!-- ---------------------------------------------------------------------------------------------------->
+		<!-- Start get started bg ...    -->
+		<div class="get-started-bg">
+		<!-- ---------------------------------------------------------------------------------------------------->
+		<!-- ---------------------------------------------------------------------------------------------------->
+			<!-- Start Header ..... -->
+				<div class="header">
+
+					<div class="logo"> 
+						
+						<a href="{{url_for('homePage')}}"><img class="logo-img" src="static\image\logo\logo.jpg" alt=""/></a>
+				
+					</div>
+
+					<div class="links">
+						<ul class="items" >
+						<li><a href="{{url_for('homePage')}}">Home</a></li>
+						<li><a href="{{url_for('aboutus')}}">About</a></li>
+						<li><a href="https://earthsally.com/shop">Products</a></li>
+						<li><a href="{{url_for('contactUs')}}">Contact Us</a></li>
+						<li><a href="{{url_for('weather')}}">Weather</a></li>
+						<li><a href="{{url_for('registerForm')}}">Register</a></li>
+						<li><a href="{{url_for('loginForm')}}">Login</a></li>
+						</ul>
+					</div>
+					
+				</div>
+				
+				
+   			 <!-- End Header ..... -->
+			<!-- ---------------------------------------------------------------------------------------------------->
+			<!-- ---------------------------------------------------------------------------------------------------->
+			<!-- Start Intro   -->
+			<div class="intro-get-started">
+				
+				<div class="title-get-started">
+					<h1 class="title-Getstarted">ARTIFICIAL </br>
+						INTELLIGENCE,</h1>
+						<b class="intro-text-getstarted">Diagnosis of Plant Diseases...</b>
+						<p class="introduction-text-getstarted">Diagnosis of diseases affecting agricultural plants using artificial intelligence and deep learning.</p>
+						
+						<div class="button-getstarted">
+							<button type="button" class="btn-getstarted"><a href="{{url_for('mainProc')}}">GET STARTED</a></button>
+							
+						</div>
+					</div>
+				</div>
+				
+				<!-- End Intro   -->
+				<!-- ------------------------------------------------------------------------------------------------   -->
+				<!-- ------------------------------------------------------------------------------------------------   -->
+				
+				
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	<!-- --------------------------------------------------------------------------- -->
+	<!-- --------------------------------------------------------------------------- -->
+	<!-- Start chatbot -->
+		<div id="chatbot" class="chatbot">
+			<div class="chat_icon">
+				<img src="static\image\tap\chat.png" alt="" class="chat-icon">
+			</div>
+		</div>
+
+		<div class="chatbot-box">
+			<div class="time-date_chatbot">
+				<span id="date-chatbot"></span> </br>
+				<span id="time-chatbot"></span>
+			</div>
+			<div id="chat-botList" class="chatbotList">
+				<ul>
+					
+				</ul>
+			</div>
+			<div class="mess-box-wrap">
+				<div class="mess-box">
+					
+				</div>
+				<button id="send-chat" type="button" class="send-chat"><i class='bx bx-send'></i></button>
+			</div>
+
+			<div class="admin-client-mess-wrap">
+				<select name="service" id="sel-chat" class="list-select" data-question="Which service you went ">
+					<option name="" id="">Please Select</option>
+					<option name="" id="">Algorazimes to identify diseases for plants</option>
+					<option name="" id="">Technology Plant Management System</option>
+					<option name="" id="">Internet of Things in the Agricultural Sector</option>
+
+				</select>
+				
+				<input type="text" name="name" data-question="What is your name" required id="" >	
+				<input type="text" name="email" data-question="What is your email" data-name required id="">	
+				<input type="text" name="phone" data-question="What is your phone" required id="" >	
+				<div  data-question="Confirm ?" class="confirm-yorPhone">
+					<button id="con-phone">Yes</button>
+					<button id="con-no">No</button>
+				</div>
+			</div>
+
+			<!-- start form for send data ...  -->
+			<form action="" class="" id="submit_info_form">
+				<div class="submit_info"></div>
+				<input type="submit" value="Send" id="submit-info">
+			</form>
+			<!-- End  form for send data ...  -->
+
+
+		</div>
+	
+	<!-- End   chatbot -->
+	<!-- --------------------------------------------------------------------------- -->
+	<!-- --------------------------------------------------------------------------- -->
+
+	
+	<!-- Start Footer -->
+		<!-- Footer -->
+		<div class="foo">
+			<footer class="text-center text-lg-start bg-white text-muted">
+				<!-- Section: Social media -->
+	<section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+	  <!-- Left -->
+	  <div class="me-5 d-none d-lg-block">
+		<span>Get connected with us on social networks:</span>
+	  </div>
+	  <!-- Left -->
+  
+	  <!-- Right -->
+	  <div>
+		<a href="" class="me-4 link-secondary">
+		  <i class="fab fa-facebook-f"></i>
+		</a>
+		<a href="" class="me-4 link-secondary">
+			<i class="fab fa-twitter"></i>
+		</a>
+		<a href="" class="me-4 link-secondary">
+		  <i class="fab fa-google"></i>
+		</a>
+		<a href="" class="me-4 link-secondary">
+			<i class="fab fa-instagram"></i>
+		</a>
+		<a href="" class="me-4 link-secondary">
+			<i class="fab fa-linkedin"></i>
+		</a>
+		<a href="" class="me-4 link-secondary">
+			<i class="fab fa-github"></i>
+		</a>
+	</div>
+	<!-- Right -->
+</section>
+<!-- Section: Social media -->
+
+<!-- Section: Links  -->
+<section class="">
+	<div class="container text-center text-md-start mt-5">
+		<!-- Grid row -->
+		<div class="row mt-3">
+			<!-- Grid column -->
+			<div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+				<!-- Content -->
+				<h6 class="text-uppercase fw-bold mb-4">
+					<i class="fas fa-gem me-3 text-secondary"></i>Company name
+				</h6>
+				<p>
+					Here you can use rows and columns to organize your footer content. Lorem ipsum
+					dolor sit amet, consectetur adipisicing elit.
+				</p>
+			</div>
+			<!-- Grid column -->
+			
+			<!-- Grid column -->
+			<div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+				<!-- Links -->
+				<h6 class="text-uppercase fw-bold mb-4">
+					Products
+				</h6>
+				<p>
+					<a href="#!" class="text-reset">Angular</a>
+				</p>
+				<p>
+					<a href="#!" class="text-reset">React</a>
+				</p>
+				<p>
+					<a href="#!" class="text-reset">Vue</a>
+				</p>
+				<p>
+			  <a href="#!" class="text-reset">Laravel</a>
+			</p>
+		</div>
+		<!-- Grid column -->
+		
+		<!-- Grid column -->
+		<div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+			<!-- Links -->
+			<h6 class="text-uppercase fw-bold mb-4">
+				Useful links
+			</h6>
+			<p>
+				<a href="#!" class="text-reset">Pricing</a>
+			</p>
+			<p>
+			  <a href="#!" class="text-reset">Settings</a>
+			</p>
+			<p>
+			  <a href="#!" class="text-reset">Orders</a>
+			</p>
+			<p>
+				<a href="#!" class="text-reset">Help</a>
+			</p>
+		</div>
+		<!-- Grid column -->
+		
+		<!-- Grid column -->
+		<div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+			<!-- Links -->
+			<h6 class="text-uppercase fw-bold mb-4">Contact</h6>
+			<p><i class="fas fa-home me-3 text-secondary"></i> New York, NY 10012, US</p>
+			<p>
+			  <i class="fas fa-envelope me-3 text-secondary"></i>
+			  info@example.com
+			</p>
+			<p><i class="fas fa-phone me-3 text-secondary"></i> + 01 234 567 88</p>
+			<p><i class="fas fa-print me-3 text-secondary"></i> + 01 234 567 89</p>
+		  </div>
+		  <!-- Grid column -->
+		</div>
+		<!-- Grid row -->
+	  </div>
+	</section>
+	<!-- Section: Links  -->
+  
+	<!-- Copyright -->
+	<div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.025);">
+		© 2021 Copyright:
+		<a class="text-reset fw-bold" href="https://mdbootstrap.com/">MDBootstrap.com</a>
+	</div>
+	<!-- Copyright -->
+</footer>
+</div>
+<!-- Footer -->
+
+
+<!-- End Footer   -->
+<!-- --------------------------------------------------------------------------- -->
+	<!-- --------------------------------------------------------------------------- -->
+	
+	
+	
+	
+	
+	
+	
+	<!-- ------------------------------------------------------------------------------------------------   -->
+	<!-- ------------------------------------------------------------------------------------------------   -->
+	<!-- Start Footer shape  -->
+	<!--Waves Container-->
+	<div class="shape-support-ani">
+		<svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+		viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+						<defs>
+							<path id="gentle-wave"
+								d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+						</defs>
+						<g class="parallax">
+							<use xlink:href="#gentle-wave" x="48" y="0" fill="rgba(255,255,255,0.7" />
+							<use xlink:href="#gentle-wave" x="48" y="5" fill="rgba(255,255,255,0.3)" />
+							<use xlink:href="#gentle-wave" x="48" y="7" fill="#efefef" />
+						</g>
+					</svg>
+				</div>
+				<!--Waves end-->
+			<!-- End   Footer shape  -->
+			<!-- ------------------------------------------------------------------------------------------------   -->
+			<!-- ------------------------------------------------------------------------------------------------   -->
+
+
+
+
+			
+
+		</div>
+			
+		<!-- ---------------------------------------------------------------------------------------------------->
+		<!-- ---------------------------------------------------------------------------------------------------->
+		<!-- End get started bg ...    -->
+	
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+			
+
+
+
+
+
+
+
+
+
+
+
+	<!-- --------------------------------------------------------------------------------------------------------------->
+	<!-- --------------------------------------------------------------------------------------------------------------->
+	<!-- Generate pdf with js  -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.0.272/jspdf.debug.js"></script>
+	<!-- --------------------------------------------------------------------------------------------------------------->
+	<!-- --------------------------------------------------------------------------------------------------------------->
+	<!-- --------------------------------------------------------------------------------------------------------------->
+	<!-- --------------------------------------------------------------------------------------------------------------->
+	<!-- script jquery ...  -->
+	<script src="static\js\jqu.js"></script>
+	<!-- --------------------------------------------------------------------------------------------------------------->
+	<!-- --------------------------------------------------------------------------------------------------------------->
+	<!-- --------------------------------------------------------------------------------------------------------------->
+	<!-- --------------------------------------------------------------------------------------------------------------->
+	<!-- script  boxicons js -->
+	<script src="static\js\boxicons.js"></script>
+	<!-- --------------------------------------------------------------------------------------------------------------->
+	<!-- --------------------------------------------------------------------------------------------------------------->
+	<!-- --------------------------------------------------------------------------------------------------------------->
+	<!-- --------------------------------------------------------------------------------------------------------------->
+	<!-- script  scrollreveal js -->
+	<script src="static\js\scrollreveal.min.js"></script>
+	<!-- --------------------------------------------------------------------------------------------------------------->
+	<!-- --------------------------------------------------------------------------------------------------------------->
+	<!-- --------------------------------------------------------------------------------------------------------------->
+	<!-- --------------------------------------------------------------------------------------------------------------->
+	<!-- script  bootstrap js -->
+	<script src="static\js\bootstrap.min.js"></script>
+	<!-- --------------------------------------------------------------------------------------------------------------->
+	<!-- --------------------------------------------------------------------------------------------------------------->
+	<!-- --------------------------------------------------------------------------------------------------------------->
+	<!-- --------------------------------------------------------------------------------------------------------------->
+	<!-- script  main jquery js -->
+	<script src="static\js\mainjquery.js"></script>
+	<!-- --------------------------------------------------------------------------------------------------------------->
+	<!-- --------------------------------------------------------------------------------------------------------------->
+	<!-- --------------------------------------------------------------------------------------------------------------->
+	<!-- --------------------------------------------------------------------------------------------------------------->
+	<!-- script  main js -->
+	<script src="static\js\mainProgramming.js"></script>
+	<!-- --------------------------------------------------------------------------------------------------------------->
+	<!-- --------------------------------------------------------------------------------------------------------------->
+	<!-- --------------------------------------------------------------------------------------------------------------->
+	<!-- --------------------------------------------------------------------------------------------------------------->
+
+</body>
+</html>
+

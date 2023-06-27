@@ -1,0 +1,132 @@
+/* Css ......... */
+/* ------------------------------------------------------ */
+/* ------------------------------------------------------ */
+/* Start Css Code ...  */
+
+/* --------------------------------- */
+/* --------------------------------- */
+body {
+    background-image: url('../image/background/main-proc-bg.jpg');
+    background-repeat: no-repeat, repeat;
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px;
+    color: white;
+    overflow-y: scroll;
+    position: relative;
+    height: 100vh !important;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+  -ms-overflow-style: none !important;  /* IE and Edge */
+  scrollbar-width: none !important;  /* Firefox */
+  
+}
+
+body::-webkit-scrollbar 
+{
+  display: none !important;
+
+}
+
+.overlay-process{
+
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    background-color: rgba(0,0,0,0.6);
+  
+}
+
+
+.page-title {
+    text-align: center;
+    margin-top: 1rem;
+}
+
+.container {
+    margin-top: 2rem;
+    width: 100%;
+    height: auto !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem ;
+}
+
+
+
+.container-img {
+    width: 370px;
+    height: 430px;
+    padding: 2.8rem  1.8rem;
+    border-radius: 1rem;
+    -webkit-border-radius: 1rem;
+    -moz-border-radius: 1rem;
+    -ms-border-radius: 1rem;
+    -o-border-radius: 1rem;
+    border: 0.1rem solid #fdfffd;
+}
+
+.plant-img img {
+    width: 365px;
+    height: 390px;
+    border-radius: 0.5rem;
+    -webkit-border-radius: 0.5rem;
+    -moz-border-radius: 0.5rem;
+    -ms-border-radius: 0.5rem;
+    -o-border-radius: 0.5rem;
+    animation: rotateImg 3s ease-in-out 1;
+    -webkit-animation: rotateImg 3.8s ease-in-out 1;
+}
+
+
+.title-det h1 {
+    font-weight: 800;
+    font-size: 33px;
+
+}
+.details h4 b {
+    font-size: 34px;
+    font-weight: 800;
+    font-style: italic;
+}
+
+
+h6.detal-des {
+    font-size: 22px;
+    font-weight: 400 !important;
+}
+
+
+.shape-main-process-animarion {
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+/* start Animation ...  */
+
+@keyframes rotateImg {
+    0%{
+        transform: rotate(0deg);
+        -webkit-transform: rotate(0deg);
+        -moz-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+        -o-transform: rotate(0deg);
+}
+    
+    100%{
+        transform: rotate(360deg);
+        -webkit-transform: rotate(360deg);
+        -moz-transform: rotate(360deg);
+        -ms-transform: rotate(360deg);
+        -o-transform: rotate(360deg);
+}
+
+};
+
+/* End   Animation ...  */
